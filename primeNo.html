@@ -1,40 +1,25 @@
 
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  
 <head>
-    <title>
-        Prime Number
-    </title>
-    <script>
-        function p() {
-              
-            var n, i, prime;
-            prime = true;
-            n=Number(document.getElementById("input").value);
-            for(i = 2; i <= n ; i++)
-                if (n % i == 0) {
-                    prime= false;
-                    break;
-                }
-                  
-                // Check and display alert message
-            if (prime == true)
-                alert(n + " is prime");
-            else
-                alert(n + " is not prime");
-        }
-    </script>
-</head> 
+<script>
+
+function odd_even(){
+var No;
+No=Number(document.getElementById("input").value);
+if(No%2==0)
+{
+alert("Even Number");
+}
+else
+{
+alert("Odd Number");
+}
+}
+</script>
+</head>
 <body>
-    <center>
-          
-        <h4>check number is prime or not</h4>
-            Enter the number:<input id="input" >
-               <br><br>
-              <input type="button" value="Check" onClick="p()">
-            <br>
-        
-    </center>
-</body>  
+Enter Any Number:<input id="input"><br />
+<button onclick="odd_even()">Click me</button>
+</body>
 </html>
